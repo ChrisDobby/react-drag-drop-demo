@@ -1,3 +1,5 @@
+Code for the Pluralsight guide [Drag and Drop in React Components](https://www.pluralsight.com/guides/drag-and-drop-react-components)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
