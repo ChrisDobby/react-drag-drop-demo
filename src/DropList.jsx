@@ -1,10 +1,13 @@
 import React from "react";
 import DropTarget from "./DropTarget";
 
-export default () => {
+export default ({ onItemDropped }) => {
     const [items, setItems] = React.useState([]);
 
-    const itemDropped = item => setItems([...items, item]);
+    const itemDropped = item => {
+        setItems([...items, item]);
+        onItemDropped(item);
+    };
     return (
         <DropTarget onItemDropped={itemDropped} dropEffect="link">
             <div className="drag-drop-container">
